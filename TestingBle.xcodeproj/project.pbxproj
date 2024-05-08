@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253586862BE60C29005A02F1 /* TCPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253586852BE60C29005A02F1 /* TCPServer.swift */; };
 		257928372BDCE99C005F2A6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257928362BDCE99C005F2A6C /* AppDelegate.swift */; };
 		257928392BDCE99C005F2A6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257928382BDCE99C005F2A6C /* SceneDelegate.swift */; };
 		2579283B2BDCE99C005F2A6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2579283A2BDCE99C005F2A6C /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 		257928512BDCE99D005F2A6C /* TestingBleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257928502BDCE99D005F2A6C /* TestingBleTests.swift */; };
 		2579285B2BDCE99D005F2A6C /* TestingBleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2579285A2BDCE99D005F2A6C /* TestingBleUITests.swift */; };
 		2579285D2BDCE99D005F2A6C /* TestingBleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2579285C2BDCE99D005F2A6C /* TestingBleUITestsLaunchTests.swift */; };
+		2579286A2BDCF130005F2A6C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257928692BDCF130005F2A6C /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		253586852BE60C29005A02F1 /* TCPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPServer.swift; sourceTree = "<group>"; };
 		257928332BDCE99C005F2A6C /* TestingBle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestingBle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		257928362BDCE99C005F2A6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		257928382BDCE99C005F2A6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		257928562BDCE99D005F2A6C /* TestingBleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingBleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2579285A2BDCE99D005F2A6C /* TestingBleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingBleUITests.swift; sourceTree = "<group>"; };
 		2579285C2BDCE99D005F2A6C /* TestingBleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingBleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		257928692BDCF130005F2A6C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		2579282A2BDCE99C005F2A6C = {
 			isa = PBXGroup;
 			children = (
+				253586852BE60C29005A02F1 /* TCPServer.swift */,
 				257928352BDCE99C005F2A6C /* TestingBle */,
 				2579284F2BDCE99D005F2A6C /* TestingBleTests */,
 				257928592BDCE99D005F2A6C /* TestingBleUITests */,
@@ -109,6 +114,7 @@
 				257928442BDCE99D005F2A6C /* LaunchScreen.storyboard */,
 				257928472BDCE99D005F2A6C /* Info.plist */,
 				2579283F2BDCE99C005F2A6C /* TestingBle.xcdatamodeld */,
+				257928692BDCF130005F2A6C /* File.swift */,
 			);
 			path = TestingBle;
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2579286A2BDCF130005F2A6C /* File.swift in Sources */,
 				257928412BDCE99C005F2A6C /* TestingBle.xcdatamodeld in Sources */,
+				253586862BE60C29005A02F1 /* TCPServer.swift in Sources */,
 				2579283B2BDCE99C005F2A6C /* ViewController.swift in Sources */,
 				257928372BDCE99C005F2A6C /* AppDelegate.swift in Sources */,
 				257928392BDCE99C005F2A6C /* SceneDelegate.swift in Sources */,
@@ -461,9 +469,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.grozziie.TestingBle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -489,9 +500,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.grozziie.TestingBle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
